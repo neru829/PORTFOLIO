@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Poiret+One" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/1.0.1/dist/aos.css">
+    <script src="jquery-3.2.1.min.js"></script>
+ <script src="jquery.inview.js"></script>
+    <script>
+        $(() => {
+            $('.inviewfadeInUp').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+            if (isInView) {
+                $(this).stop().addClass('fadeInUp');
+            } else {
+                $(this).stop().removeClass('fadeInUp');
+            }
+          });
+        });
+    </script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+ 
+  <header>
+      <h1>PORTFOLIO</h1>
+  </header>
+  <div class="container">
+     <div class="contents">
+      <h2>Web Design</h2>
+        <figure class="design">
+         <img class="zoom inviewfadeInUp" src="img/FOOD.png">
+         <figcaption>
+         <h3>
+          <a href="https://neru829.github.io/FOOD/">FOOD</a>
+         </h3>
+         <p>２０１７春　Life is Tech!
+         <br>食べたものの紹介サイト
+         </p>
+         </figcaption>
+         </figure>
+      </div>
+      <div class="contents">
+      <h2>Web Service</h2>
+        <figure class="service">
+         <img class="zoom inviewfadeInUp" src="img/TODO.png">
+         <figcaption>
+           <h3>TO DO</h3>
+           <p>２０１７夏 Life is Tech!
+           <br>TO DOリスト（リンク未設定）
+           </p>
+         </figcaption>
+        </figure>
+      </div>
+      <div class="photocontents">
+      <h2>Photo</h2>
+      <figure class="night">
+         <img class="zoom inviewfadeInUp" src="img/night.JPG">
+         <figcaption>
+           <h3>Night</h3>
+           <p>一眼っぽい写真が撮りたかった</p>
+         </figcaption>
+        </figure>
+        <figure class="santa">
+         <img class="zoom inviewfadeInUp" src="img/santa.jpg">
+         <figcaption>
+           <h3>Santa</h3>
+           <p>毎年恒例のサンタ</p>
+         </figcaption>
+        </figure>
+        <figure class="goldfish">
+         <img class="zoom inviewfadeInUp" src="img/kingyo.jpg">
+         <figcaption>
+           <h3>Goldfish</h3>
+           <p>金魚茶屋っていうカフェ</p>
+         </figcaption>
+        </figure>
+        <figure class="basket">
+         <img class="zoom inviewfadeInUp" src="img/kago.jpg">
+         <figcaption>
+           <h3>Basket</h3>
+             <p>キャンプ中の散歩で</p>
+         </figcaption>
+        </figure>
+        <figure class="back">
+         <img class="zoom inviewfadeInUp" src="img/back.jpg">
+         <figcaption>
+           <h3>Camp</h3>
+           <p>風が強い</p>
+         </figcaption>
+        </figure>
+      </div>
+    </div>
+  <footer>
+      &copy;2017 nissy
+  </footer>
+</body>
+</html>
